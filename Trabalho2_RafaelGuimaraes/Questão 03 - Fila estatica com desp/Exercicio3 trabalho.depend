@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1659899069 source:c:\users\user\documents\aed1\exercicio3 trabalho\fila.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fila.h"
+	<time.h>
+
+1659898942 c:\users\user\documents\aed1\exercicio3 trabalho\fila.h
+	<time.h>
+
+1659899144 source:c:\users\user\documents\aed1\exercicio3 trabalho\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fila.h"
+
+1659722376 c:\users\user\documents\aed1\exercicio3 trabalho\fila.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fila.h"
+
+1659899146 source:c:\users\rafael guimarães\documents\aed1\trabalho_2\trabalho2_rafaelguimaraes\questão 03 - fila estatica com desp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fila.h"
+
+1659898944 c:\users\rafael guimarães\documents\aed1\trabalho_2\trabalho2_rafaelguimaraes\questão 03 - fila estatica com desp\fila.h
+	<time.h>
+

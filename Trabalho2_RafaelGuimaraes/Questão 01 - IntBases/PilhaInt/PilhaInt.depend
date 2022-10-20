@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1658952616 source:c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\questão 01 - intbases\pilhaint\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PilhaInt.h"
+
+1658951528 c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\questão 01 - intbases\pilhaint\pilhaint.h
+
+1658954453 source:c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\questão 01 - intbases\pilhaint\pilhaint.c
+	<stdlib.h>
+	"PilhaInt.h"
+

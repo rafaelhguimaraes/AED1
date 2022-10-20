@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1659814051 source:c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\quest 02 - pilhaescopo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<ctype.h>
+	<string.h>
+	"Pilha.h"
+
+1659648320 c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\quest 02 - pilhaescopo\pilha.h
+
+1659814438 source:c:\users\workspace\onedrive\faculdade-ufu\aed 1\aed - novo\trabalho2 - pilha e fila\quest 02 - pilhaescopo\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
+1659815530 source:c:\users\rafael guimarães\documents\aed1\trabalho_2\trabalho2_rafaelguimaraes\questao 02 - pilhaescopo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<ctype.h>
+	<string.h>
+	"Pilha.h"
+
+1659648322 c:\users\rafael guimarães\documents\aed1\trabalho_2\trabalho2_rafaelguimaraes\questao 02 - pilhaescopo\pilha.h
+
+1659816262 source:c:\users\rafael guimarães\documents\aed1\trabalho_2\trabalho2_rafaelguimaraes\questao 02 - pilhaescopo\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+

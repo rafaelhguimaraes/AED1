@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1659729318 source:c:\users\rafael guimarães\documents\aed1\aeddenovo\trabalho_pilhas_filas\q4_fpd\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fpd.h"
+
+1659458940 c:\users\rafael guimarães\documents\aed1\aeddenovo\trabalho_pilhas_filas\q4_fpd\fpd.h
+
+1659733351 source:c:\users\rafael guimarães\documents\aed1\aeddenovo\trabalho_pilhas_filas\q4_fpd\fpd.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fpd.h"
+

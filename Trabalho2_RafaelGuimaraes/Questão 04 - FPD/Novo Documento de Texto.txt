@@ -1,0 +1,166 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "fpd.h"
+
+struct no
+{
+    Pessoa paciente;
+    struct no *prox;
+};
+
+/*
+    ======== Operação cria_fila:
+
+    - Entrada: Nenhuma
+    - Pré-condição: Nenhuma
+    - Processo: Retorna NULL
+    - Saída: NULL
+    - Pós-condição: Nenhuma
+*/
+
+Fila cria_fila ()
+{
+    return NULL;
+}
+
+/*
+    ======== Operação fila_vazia:
+
+    - Entrada: Endereço da fila
+    - Pré-condição: Fila ser válida
+    - Processo: Verifica se a fila é NULL
+    - Saída: Retorna 1 se ela for NULL 0 caso não
+    - Pós-condição: Nenhuma
+*/
+
+int fila_vazia (Fila f)
+{
+    if (f == NULL)
+        return 1;
+    else
+        return 0;
+}
+
+/*
+    ======== Operação: insere_ord
+
+    - Entrada: endereço da fila, variável do tipo Pessoa
+    - Pré-condições: fila não ser inválida
+    - Processo: adiciona de forma ordenada na fila
+    - Saída: 1 caso tenha inserido ou 0 caso o contrário
+    - Pós-condição: fila com mais um elemento
+*/
+
+int insere_ord (Fila *f, Pessoa elem)
+{
+
+    Fila N = (Fila)malloc(sizeof(struct no));
+
+    if (N == NULL)
+        return 0;
+
+    N -> paciente = elem;
+
+    if (fila_vazia(*f))
+    {
+        N -> prox = N;
+        *f = N;
+    }
+    else
+    {
+        Fila aux = *f;
+        while (aux->prox != *f && aux->prox->paciente.gravidade > elem.gravidade)
+            aux = aux->prox;
+
+
+        if (aux->prox == *f && aux->prox->paciente.gravidade > elem.gravidade)
+        {
+            aux = aux->prox;
+            N->prox = aux->prox;
+            aux->prox = N;
+            *f = N;
+        }
+        else
+        {
+            N->prox = aux->prox;
+            aux->prox = N;
+        }
+    }
+
+
+    return 1;
+}
+
+/*
+    ========Operação remove_inicio:
+
+    - Entrada: Endereço da fila e endereço de elem
+    - Pré-condição: Fila não estar vazia
+    - Processo: Remove do início da fila
+    - Saída: Retorna 1 caso tenha dado certo e 0 caso não
+    - Pós-condição: Fila com menos um elemento
+*/
+
+int remove_ini (Fila *f, Pessoa *elem)
+{
+    if (fila_vazia(*f))
+        return 0;
+
+    Fila aux = (*f) -> prox;
+    *elem = aux -> paciente;
+
+    if (*f ==  (*f) -> prox)
+        *f = NULL;
+    else
+        (*f) -> prox = aux -> prox;
+
+    free (aux);
+
+    return 1;
+}
+
+/*
+    ========Operação esvazia_fila:
+
+    - Entrada: Endereço da fila
+    - Pré-condição: Nenhuma
+    - Processo: processo do apaga_fila(f)
+    - Saída: retorna apaga_fila(f)
+    - Pós-condição: Nenhuma
+*/
+
+int esvazia_fila (Fila *f)
+{
+    return apaga_fila(f);
+}
+
+/*
+    ========Operação apaga_fila:
+
+    - Entrada: Endereço da fila
+    - Pré-condição: Fila ser vazia
+    - Processo: Apaga a Fila
+    - Saída: Retorna 1 caso tenha dado certo e 0 caso não
+    - Pós-condição: Fila apagada
+*/
+
+int apaga_fila (Fila *f)
+{
+    if (fila_vazia(*f))
+        return 0; //Falha
+
+    while (*f != (*f)->prox)            // Condição para enquanto tem mais de um elemento na lista
+    {
+        Fila aux = (*f)->prox;
+        (*f)->prox = aux->prox;
+        free(aux);
+
+    }
+    Fila aux = *f;
+    *f = NULL;
+    free(aux);
+
+    return 1;
+}
+

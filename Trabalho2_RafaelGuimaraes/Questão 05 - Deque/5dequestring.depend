@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1647723521 source:c:\users\rafael guimarães\documents\aed1\5dequestring\deque.c
+	"deque.h"
+	<stdlib.h>
+	<string.h>
+
+1647723521 c:\users\rafael guimarães\documents\aed1\5dequestring\deque.h
+
+1647782462 source:c:\users\rafael guimarães\documents\aed1\5dequestring\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"deque.h"
+
+1659723842 source:c:\users\rafael guimarães\documents\aed1\trabalho_2\5dequestring\deque.c
+	"deque.h"
+	<stdlib.h>
+	<string.h>
+
+1647723521 c:\users\rafael guimarães\documents\aed1\trabalho_2\5dequestring\deque.h
+
+1659723823 source:c:\users\rafael guimarães\documents\aed1\trabalho_2\5dequestring\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"deque.h"
+
+1659723842 source:c:\users\rafael guimarães\desktop\minha parte trabalho de aed1\5dequestring\deque.c
+	"deque.h"
+	<stdlib.h>
+	<string.h>
+
+1647723521 c:\users\rafael guimarães\desktop\minha parte trabalho de aed1\5dequestring\deque.h
+
+1659884484 source:c:\users\rafael guimarães\desktop\minha parte trabalho de aed1\5dequestring\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"deque.h"
+
